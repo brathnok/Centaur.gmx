@@ -26,11 +26,11 @@
   </backgrounds>
   <paths name="paths">
     <path>paths\enemey2path</path>
+    <path>paths\circles</path>
   </paths>
   <objects name="objects">
     <object>objects\obj_hero</object>
     <object>objects\obj_enemy</object>
-    <object>objects\obj_enemyW2</object>
     <object>objects\obj_bullet</object>
     <object>objects\obj_gametime</object>
     <object>objects\obj_enemy2</object>
