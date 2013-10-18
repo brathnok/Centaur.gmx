@@ -71,10 +71,23 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(gamepad_button_check_pressed(0, gp_start)) || (keyboard_check(vk_enter))
+            <string>    if(gamepad_button_check(0, gp_start)) || (keyboard_check(vk_enter))
+    {
+        room_goto(rm_main);
+        instance_destroy();
+    }
+    
+if(gamepad_button_check_pressed(0, gp_select))
 {
-    room_goto(rm_main);
-}
+    if window_get_fullscreen() = true
+    {
+      window_set_fullscreen(false);
+   }
+    else
+    {
+      window_set_fullscreen(true);
+    }
+}   
 </string>
           </argument>
         </arguments>
@@ -105,20 +118,6 @@
       </action>
       <action>
         <libid>1</libid>
-        <id>422</id>
-        <kind>1</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>0</useapplyto>
-        <exetype>0</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>612</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -144,6 +143,20 @@
             <string>0</string>
           </argument>
         </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>422</id>
+        <kind>1</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
       </action>
       <action>
         <libid>1</libid>

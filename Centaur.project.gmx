@@ -5,8 +5,10 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound">
-    <sound>sound\sound0_CentaurSong1</sound>
-    <sound>sound\sound1_explosion</sound>
+    <sounds name="SpaceLevel">
+      <sound>sound\sound1_explosion</sound>
+      <sound>sound\sound0_CentaurSong1</sound>
+    </sounds>
   </sounds>
   <sprites name="sprites">
     <sprites name="TitleScreen">
@@ -16,6 +18,7 @@
     <sprites name="PowerUps">
       <sprite>sprites\spr_health</sprite>
       <sprite>sprites\spr_powerup</sprite>
+      <sprite>sprites\spr_powerUp2</sprite>
     </sprites>
     <sprites name="SpaceSprites">
       <sprite>sprites\spr_bullet</sprite>
@@ -31,41 +34,60 @@
       <sprite>sprites\spr_enemy2</sprite>
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_hero</sprite>
+      <sprite>sprites\spr_PoweredUp</sprite>
       <sprite>sprites\spr_justdied</sprite>
       <sprite>sprites\spr_spacelives</sprite>
+      <sprite>sprites\spr_InfoBar</sprite>
+      <sprite>sprites\spr_spaceboss</sprite>
     </sprites>
-    <sprite>sprites\spr_InfoBar</sprite>
   </sprites>
   <backgrounds name="background">
-    <background>background\bg_space_sub1</background>
-    <background>background\bg_space_sub2</background>
-    <background>background\bg_space_main</background>
+    <backgrounds name="SpaceLevel">
+      <background>background\bg_space_main</background>
+      <background>background\bg_space_sub2</background>
+      <background>background\bg_space_sub1</background>
+    </backgrounds>
   </backgrounds>
   <paths name="paths">
     <path>paths\pth_testPath</path>
     <path>paths\pth_testPath2</path>
   </paths>
   <objects name="objects">
-    <object>objects\obj_hero</object>
-    <object>objects\obj_enemy</object>
-    <object>objects\obj_bullet</object>
-    <object>objects\obj_gametime</object>
-    <object>objects\obj_enemy2</object>
-    <object>objects\spr_enemy2bullet</object>
-    <object>objects\obj_enemybullet2</object>
-    <object>objects\obj_PowerUp</object>
-    <object>objects\obj_bigguy</object>
-    <object>objects\obj_bigguyshot</object>
-    <object>objects\HighScore</object>
-    <object>objects\obj_health</object>
-    <object>objects\obj_jumper</object>
-    <object>objects\obj_planet1</object>
-    <object>objects\obj_planet2</object>
-    <object>objects\obj_explosion</object>
-    <object>objects\obj_bigExplosion</object>
-    <object>objects\obj_TitleScreen</object>
-    <object>objects\obj_startbutton</object>
-    <object>objects\obj_InfoBar</object>
+    <objects name="SpaceEnemies">
+      <object>objects\obj_SpaceEnemies</object>
+      <object>objects\obj_jumper</object>
+      <object>objects\obj_enemy</object>
+      <object>objects\obj_enemy2</object>
+      <object>objects\obj_bigguy</object>
+      <object>objects\obj_enemybullet2</object>
+      <object>objects\spr_enemy2bullet</object>
+      <object>objects\obj_bigguyshot</object>
+    </objects>
+    <objects name="PowerUps">
+      <object>objects\obj_health</object>
+      <object>objects\obj_PowerUp</object>
+      <object>objects\obj_PowerUp2</object>
+    </objects>
+    <objects name="SpaceObjects">
+      <object>objects\obj_GameTime_SpaceLevel</object>
+      <object>objects\obj_bigExplosion</object>
+      <object>objects\obj_explosion</object>
+      <object>objects\obj_planet2</object>
+      <object>objects\obj_planet1</object>
+    </objects>
+    <objects name="HeroStuff">
+      <object>objects\obj_hero</object>
+      <object>objects\obj_bullet</object>
+      <object>objects\obj_InfoBar</object>
+    </objects>
+    <objects name="Bosses">
+      <object>objects\obj_spaceboss</object>
+    </objects>
+    <objects name="SpecialRooms">
+      <object>objects\obj_HighScore</object>
+      <object>objects\obj_TitleScreen</object>
+      <object>objects\obj_startbutton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
