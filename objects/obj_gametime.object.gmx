@@ -1505,7 +1505,7 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(room_height - 50)</string>
+            <string>random(room_height - 70)</string>
           </argument>
         </arguments>
       </action>
@@ -1613,7 +1613,7 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(room_height - 50)</string>
+            <string>random(room_height - 70)</string>
           </argument>
         </arguments>
       </action>
@@ -1721,7 +1721,7 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(room_height - 50)</string>
+            <string>random(room_height - 70)</string>
           </argument>
         </arguments>
       </action>
@@ -1829,7 +1829,7 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(room_height - 50)</string>
+            <string>random(room_height - 70)</string>
           </argument>
         </arguments>
       </action>

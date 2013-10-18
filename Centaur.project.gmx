@@ -31,6 +31,8 @@
       <sprite>sprites\spr_enemy2</sprite>
       <sprite>sprites\spr_enemy</sprite>
       <sprite>sprites\spr_hero</sprite>
+      <sprite>sprites\spr_justdied</sprite>
+      <sprite>sprites\spr_spacelives</sprite>
     </sprites>
     <sprite>sprites\spr_InfoBar</sprite>
   </sprites>

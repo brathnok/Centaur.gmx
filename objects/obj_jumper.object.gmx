@@ -247,6 +247,7 @@
 {
     move_towards_point(obj_hero.x,obj_hero.y,4);
 }
+
 </string>
           </argument>
         </arguments>
@@ -584,6 +585,16 @@
           <argument>
             <kind>1</kind>
             <string>image_angle -= 20;
+
+if(x &lt; 16 || x &gt; (room_width + 16))
+{
+    hspeed *= -1;
+}
+
+if(y &lt; 16 || y &gt; (room_height - 48))
+{
+    vspeed *= -1;
+}
 </string>
           </argument>
         </arguments>
