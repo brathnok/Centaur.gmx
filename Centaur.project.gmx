@@ -9,24 +9,30 @@
     <sound>sound\sound1_explosion</sound>
   </sounds>
   <sprites name="sprites">
-    <sprite>sprites\spr_bullet</sprite>
-    <sprite>sprites\spr_hero</sprite>
-    <sprite>sprites\spr_enemy</sprite>
-    <sprite>sprites\spr_enemy2</sprite>
-    <sprite>sprites\spr_enemybullet2</sprite>
-    <sprite>sprites\spr_enemybullet</sprite>
-    <sprite>sprites\spr_bigguy</sprite>
-    <sprite>sprites\spr_jumper</sprite>
-    <sprite>sprites\spr_bigbullet</sprite>
-    <sprite>sprites\spr_health</sprite>
-    <sprite>sprites\spr_powerup</sprite>
-    <sprite>sprites\spr_planet1</sprite>
-    <sprite>sprites\spr_planet2</sprite>
-    <sprite>sprites\spr_explosion</sprite>
-    <sprite>sprites\spr_bigExplosion</sprite>
-    <sprite>sprites\spr_TitleScreen</sprite>
-    <sprite>sprites\spr_Start</sprite>
-    <sprite>sprites\spr_gravitywell</sprite>
+    <sprites name="TitleScreen">
+      <sprite>sprites\spr_Start</sprite>
+      <sprite>sprites\spr_TitleScreen</sprite>
+    </sprites>
+    <sprites name="PowerUps">
+      <sprite>sprites\spr_health</sprite>
+      <sprite>sprites\spr_powerup</sprite>
+    </sprites>
+    <sprites name="SpaceSprites">
+      <sprite>sprites\spr_bullet</sprite>
+      <sprite>sprites\spr_bigExplosion</sprite>
+      <sprite>sprites\spr_explosion</sprite>
+      <sprite>sprites\spr_planet2</sprite>
+      <sprite>sprites\spr_planet1</sprite>
+      <sprite>sprites\spr_bigbullet</sprite>
+      <sprite>sprites\spr_jumper</sprite>
+      <sprite>sprites\spr_bigguy</sprite>
+      <sprite>sprites\spr_enemybullet</sprite>
+      <sprite>sprites\spr_enemybullet2</sprite>
+      <sprite>sprites\spr_enemy2</sprite>
+      <sprite>sprites\spr_enemy</sprite>
+      <sprite>sprites\spr_hero</sprite>
+    </sprites>
+    <sprite>sprites\spr_InfoBar</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_space_sub1</background>
@@ -57,7 +63,7 @@
     <object>objects\obj_bigExplosion</object>
     <object>objects\obj_TitleScreen</object>
     <object>objects\obj_startbutton</object>
-    <object>objects\obj_gravitywell</object>
+    <object>objects\obj_InfoBar</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_TitleScreen</room>
