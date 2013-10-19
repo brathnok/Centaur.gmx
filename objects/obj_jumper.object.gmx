@@ -11,6 +11,30 @@
     <event eventtype="0" enumb="0">
       <action>
         <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>hitpoints</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>4</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
         <id>612</id>
         <kind>0</kind>
         <userelative>0</userelative>
@@ -139,30 +163,6 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>hitpoints</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>3</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
             <string>can_shoot</string>
           </argument>
           <argument>
@@ -296,30 +296,6 @@
           <argument>
             <kind>4</kind>
             <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hitpoints</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>4</string>
           </argument>
         </arguments>
       </action>
@@ -421,7 +397,7 @@
             <kind>1</kind>
             <string>if instance_exists(obj_hero)
 {
-    move_towards_point(obj_hero.x,obj_hero.y,4);
+    move_towards_point(obj_hero.x,obj_hero.y,2);
 }
 
 </string>
@@ -497,30 +473,6 @@
           <argument>
             <kind>4</kind>
             <string>2</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>611</id>
-        <kind>6</kind>
-        <userelative>-1</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>hitpoints</string>
-          </argument>
-          <argument>
-            <kind>0</kind>
-            <string>6</string>
           </argument>
         </arguments>
       </action>
@@ -762,14 +714,25 @@
             <kind>1</kind>
             <string>image_angle -= 20;
 
-if(x &lt; 16 || x &gt; (room_width + 16))
+if(x &lt;= 16)
 {
+    x = 17;
     hspeed *= -1;
 }
-
-if(y &lt; 16 || y &gt; (room_height - 48))
+else if (x &gt; (room_width - 16))
 {
+    x = room_width - 17;
+    hspeed *= -1;
+}
+else if(y &lt; 16)
+{
+    y = 17;
     vspeed *= -1;
+}
+else if(y &gt; (room_height - 48))
+{
+    y = room_height - 47;
+    vspeed *= -1;   
 }
 </string>
           </argument>

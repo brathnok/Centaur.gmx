@@ -189,11 +189,11 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>4</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>3</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -229,7 +229,7 @@
             <kind>1</kind>
             <string>if instance_exists(obj_hero)
 {
-    move_towards_point(obj_hero.x,obj_hero.y,8);
+    move_towards_point(obj_hero.x,obj_hero.y,4);
 }
 </string>
           </argument>
@@ -273,7 +273,7 @@
           </argument>
           <argument>
             <kind>4</kind>
-            <string>2</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>
@@ -309,7 +309,7 @@
             <kind>1</kind>
             <string>if instance_exists(obj_hero)
 {
-    move_towards_point(obj_hero.x,obj_hero.y,6);
+    move_towards_point(obj_hero.x,obj_hero.y,8);
 }
 </string>
           </argument>

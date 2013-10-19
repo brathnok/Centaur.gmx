@@ -241,7 +241,7 @@
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>7680</string>
+            <string>9600</string>
           </argument>
           <argument>
             <kind>4</kind>
@@ -1101,32 +1101,6 @@ instance_create(xx, yy, obj_jumper);
       </action>
       <action>
         <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>do {
-xx = random(room_width - 64); //random x
-yy = random(room_height - 64); //random y
-} until (position_empty(xx, yy)); //until place is free (this will check for ANY instance, search for similar functions that suit your need)
-
-instance_create(xx, yy, obj_jumper);
-</string>
-          </argument>
-        </arguments>
-      </action>
-      <action>
-        <libid>1</libid>
         <id>301</id>
         <kind>0</kind>
         <userelative>-1</userelative>
@@ -1204,32 +1178,6 @@ instance_create(xx, yy, obj_jumper);
         <whoName>self</whoName>
         <relative>0</relative>
         <isnot>0</isnot>
-      </action>
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>do {
-xx = random(room_width - 64); //random x
-yy = random(room_height - 64); //random y
-} until (position_empty(xx, yy)); //until place is free (this will check for ANY instance, search for similar functions that suit your need)
-
-instance_create(xx, yy, obj_jumper);
-</string>
-          </argument>
-        </arguments>
       </action>
       <action>
         <libid>1</libid>
@@ -1987,7 +1935,7 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>random(10)</string>
+            <string>random(2)</string>
           </argument>
         </arguments>
       </action>
@@ -2011,11 +1959,31 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>4</string>
+            <string>0</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>3</string>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>321</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>1</exetype>
+        <functionname>action_message</functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>2</kind>
+            <string>string(pickapowerup)</string>
           </argument>
         </arguments>
       </action>
@@ -2109,11 +2077,11 @@ instance_create(xx, yy, obj_bigguy);
           </argument>
           <argument>
             <kind>0</kind>
-            <string>4</string>
+            <string>1</string>
           </argument>
           <argument>
             <kind>4</kind>
-            <string>2</string>
+            <string>0</string>
           </argument>
         </arguments>
       </action>

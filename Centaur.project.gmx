@@ -52,6 +52,7 @@
     <path>paths\pth_testPath</path>
     <path>paths\pth_testPath2</path>
   </paths>
+  <scripts name="scripts"/>
   <objects name="objects">
     <objects name="SpaceEnemies">
       <object>objects\obj_SpaceEnemies</object>
