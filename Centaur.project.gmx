@@ -48,11 +48,7 @@
       <background>background\bg_space_sub1</background>
     </backgrounds>
   </backgrounds>
-  <paths name="paths">
-    <path>paths\pth_testPath</path>
-    <path>paths\pth_testPath2</path>
-  </paths>
-  <scripts name="scripts"/>
+  <paths name="paths"/>
   <objects name="objects">
     <objects name="SpaceEnemies">
       <object>objects\obj_SpaceEnemies</object>
