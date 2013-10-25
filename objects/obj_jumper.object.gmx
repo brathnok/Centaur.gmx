@@ -397,7 +397,7 @@
             <kind>1</kind>
             <string>if instance_exists(obj_hero)
 {
-    move_towards_point(obj_hero.x,obj_hero.y,2);
+    move_towards_point(obj_hero.x,obj_hero.y,4);
 }
 
 </string>
